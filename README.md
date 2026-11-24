@@ -1,4 +1,4 @@
-﻿# ðŸŽ¬ filmarca
+# ðŸŽ¬ filmarca
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -6,7 +6,7 @@
 </div>
 
 
-[![filmarca: site vira filme](guia/assets/banner.jpg)](https://inematds.github.io/filmarca/guia/)
+[![filmarca: site vira filme](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/
 
 **ðŸ‡§ðŸ‡· [PortuguÃªs](README.md) Â· ðŸ‡ºðŸ‡¸ [English](README.en.md) Â· ðŸ‡ªðŸ‡¸ [EspaÃ±ol](README.es.md)**
 
@@ -18,11 +18,11 @@ O filmarca Ã© uma ferramenta gratuita que transforma o site de uma empresa ou 
 
 ## ðŸ“– Guia de uso
 
-Guia completo (landing + passo a passo): **https://inematds.github.io/filmarca/guia/**
+Guia completo (landing + passo a passo): **https://linnoff88-dev.github.io/
 
 ## Demo
 
-O filme do inema.club, feito pela prÃ³pria ferramenta (8 cenas escritas pela IA, todas aprovadas na conferÃªncia, 2,7 min de ponta a ponta):
+O filme do ARCKHÉ AI, feito pela prÃ³pria ferramenta (8 cenas escritas pela IA, todas aprovadas na conferÃªncia, 2,7 min de ponta a ponta):
 
 [![demo](docs/demo.gif)](docs/demo-pt-16x9.mp4)
 
@@ -33,7 +33,7 @@ O filme do inema.club, feito pela prÃ³pria ferramenta (8 cenas escritas pela I
 Precisa de Node.js 22+, FFmpeg e o Claude Code (`claude`) ou o Codex (`codex`) logado no terminal.
 
 ```bash
-git clone https://github.com/inematds/filmarca
+git clone https://github.com/linnoff88-dev/filmarca
 cd filmarca
 npm i
 npx playwright install chromium
@@ -81,7 +81,7 @@ MIT. As fontes embutidas (Inter e Sora) sÃ£o SIL Open Font License. Fontes bai
 
 ---
 
-Feito pelo [INEMA.CLUB](https://inema.club).
+Feito pelo [ARCKHÉ AI](https://ARCKHÉ AI).
 
 ---
 

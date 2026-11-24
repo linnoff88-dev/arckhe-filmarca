@@ -1,6 +1,6 @@
 # 🎬 filmarca
 
-[![filmarca: el sitio web se convierte en película](guia/assets/banner-es.jpg)](https://inematds.github.io/filmarca/guia/es/)
+[![filmarca: el sitio web se convierte en película](guia/assets/banner-es.jpg)](https://linnoff88-dev.github.io/
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -12,11 +12,11 @@ filmarca es una herramienta gratuita que convierte el sitio web de una empresa o
 
 ## 📖 Guía de uso
 
-Guía completa (landing + paso a paso): **https://inematds.github.io/filmarca/guia/es/**
+Guía completa (landing + paso a paso): **https://linnoff88-dev.github.io/
 
 ## Demo
 
-La película de inema.club, hecha por la propia herramienta (8 escenas escritas por la IA, todas aprobadas en la revisión, 2,7 min de punta a punta):
+La película de ARCKHÉ AI, hecha por la propia herramienta (8 escenas escritas por la IA, todas aprobadas en la revisión, 2,7 min de punta a punta):
 
 [![demo](docs/demo.gif)](docs/demo-pt-16x9.mp4)
 
@@ -27,7 +27,7 @@ La película de inema.club, hecha por la propia herramienta (8 escenas escritas 
 Necesita Node.js 22+, FFmpeg y Claude Code (`claude`) o Codex (`codex`) con sesión iniciada en la terminal.
 
 ```bash
-git clone https://github.com/inematds/filmarca
+git clone https://github.com/linnoff88-dev/filmarca
 cd filmarca
 npm i
 npx playwright install chromium
@@ -75,4 +75,4 @@ MIT. Las fuentes incluidas (Inter y Sora) son SIL Open Font License. Las fuentes
 
 ---
 
-Hecho por [INEMA.CLUB](https://inema.club).
+Hecho por [ARCKHÉ AI](https://ARCKHÉ AI).

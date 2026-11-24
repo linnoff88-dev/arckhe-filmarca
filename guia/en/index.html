@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>filmarca — from website to brand film</title>
 <meta name="description" content="filmarca reads a website's visual DNA and generates a product film in 16:9, 9:16 and 1:1, in PT, EN and ES, using the AI from your subscription (Claude Code or Codex), no API key.">
-<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/filmarca/guia/">
-<link rel="alternate" hreflang="en" href="https://inematds.github.io/filmarca/guia/en/">
-<link rel="alternate" hreflang="es" href="https://inematds.github.io/filmarca/guia/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://linnoff88-dev.github.io/
+<link rel="alternate" hreflang="en" href="https://linnoff88-dev.github.io/
+<link rel="alternate" hreflang="es" href="https://linnoff88-dev.github.io/
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -39,8 +39,8 @@
   nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
   nav .brand .emoji{font-size:1.25rem}
   nav .sep{color:var(--mut);opacity:.45}
-  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
-  nav .inema:hover{filter:brightness(1.15)}
+  nav .ARCKHÉ{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .ARCKHÉ:hover{filter:brightness(1.15)}
   nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
   nav .pro:hover{filter:brightness(1.15)}
   nav .clubpro{display:inline-flex;align-items:center;gap:6px}
@@ -113,9 +113,9 @@
   <a class="brand" href="#top"><span class="emoji">🎬</span> filmarca</a>
   <span class="sep">|</span>
   <span class="clubpro">
-    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <a class="ARCKHÉ" href="https://ARCKHÉ AI" target="_blank" rel="noopener">ARCKHÉ AI</a>
     <span class="sep">-</span>
-    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+    <a class="pro" href="https://ARCKHÉ.pro" target="_blank" rel="noopener">PRO</a>
   </span>
   <div class="links">
     <a class="sec" href="#oque">What it is</a>
@@ -125,7 +125,7 @@
     <a class="sec" href="#roadmap">Roadmap</a>
     <span class="lang"><a href="../">PT</a><a class="on" href="./">EN</a><a href="../es/">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
-    <a class="btn" href="https://github.com/inematds/filmarca" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://github.com/linnoff88-dev/filmarca" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
 
@@ -138,7 +138,7 @@
       <p class="lead">Point it at a URL. filmarca reads the site's colors, fonts, logo, text and screenshots, writes the script, animates the scenes and delivers the MP4 in 16:9, 9:16 and 1:1, in Portuguese, English and Spanish.</p>
       <div class="cta">
         <a class="btn" href="#guia">Start the guide</a>
-        <a class="btn ghost" href="https://github.com/inematds/filmarca" target="_blank" rel="noopener">View on GitHub</a>
+        <a class="btn ghost" href="https://github.com/linnoff88-dev/filmarca" target="_blank" rel="noopener">View on GitHub</a>
       </div>
     </div>
     <figure><img src="../assets/banner-en.jpg" alt="Banner: website becomes a film"></figure>
@@ -191,7 +191,7 @@
     <div class="card"><h3>Claude Code or Codex logged in</h3><p>The AI runs through your subscription. Either one working in the terminal is enough.</p><pre><span class="k">claude</span> -p <span class="s">"say ok"</span>
 <span class="c"># or</span>
 <span class="k">codex</span> exec <span class="s">"say ok"</span></pre></div>
-    <div class="card"><h3>filmarca</h3><p>Clone, install and download the browser once.</p><pre><span class="k">git</span> clone https://github.com/inematds/filmarca
+    <div class="card"><h3>filmarca</h3><p>Clone, install and download the browser once.</p><pre><span class="k">git</span> clone https://github.com/linnoff88-dev/filmarca
 <span class="k">cd</span> filmarca && <span class="k">npm</span> i
 <span class="k">npx</span> playwright install chromium</pre></div>
   </div>
@@ -244,21 +244,21 @@
 
   <div class="step"><div class="b">7</div><div>
     <h3>Choose the model</h3>
-    <p>By default the director and scenes use the "top" model and translation the "smallest", read from <code>~/.config/inema/modelos.env</code> when it exists. To force one model for everything:</p>
+    <p>By default the director and scenes use the "top" model and translation the "smallest", read from <code>~/.config/ARCKHÉ/modelos.env</code> when it exists. To force one model for everything:</p>
 <pre><span class="k">FILMARCA_MODELO</span>=sonnet <span class="k">node</span> bin/filmarca.mjs cenas ~/filmes/seusite --so c2,c5</pre>
   </div></div>
 </div></section>
 
 <section id="exemplos"><div class="wrap">
   <span class="chip">Examples</span>
-  <h2>The inema.club film, made by the tool itself</h2>
-  <p class="sub">Nothing here was animated by hand: filmarca read inema.club, the AI wrote the 8 scenes and all of them passed the checks. Total draft time: 2.7 minutes.</p>
+  <h2>The ARCKHÉ AI film, made by the tool itself</h2>
+  <p class="sub">Nothing here was animated by hand: filmarca read ARCKHÉ AI, the AI wrote the 8 scenes and all of them passed the checks. Total draft time: 2.7 minutes.</p>
   <div class="vid">
     <video src="../../docs/demo-en-16x9.mp4" poster="../../docs/demo-poster.jpg" controls muted playsinline preload="none"></video>
     <video src="../../docs/demo-pt-9x16.mp4" controls muted playsinline preload="none"></video>
   </div>
   <div class="ex">
-    <figure><img src="../assets/ex-cenas.jpg" alt="Nine frames from the inema.club film" loading="lazy"><figcaption>Film frames in 16:9: opening, title, swapping words, card list, real site screenshot, step line and final call to action.</figcaption></figure>
+    <figure><img src="../assets/ex-cenas.jpg" alt="Nine frames from the ARCKHÉ AI film" loading="lazy"><figcaption>Film frames in 16:9: opening, title, swapping words, card list, real site screenshot, step line and final call to action.</figcaption></figure>
     <figure><img src="../assets/ex-formatos.jpg" alt="The same scene in 16:9, 9:16 and 1:1" loading="lazy"><figcaption>The same scene in all three formats. There is only one code: measurements are relative to the frame.</figcaption></figure>
     <figure><img src="../assets/ex-idiomas.jpg" alt="The same scene in Portuguese, English and Spanish" loading="lazy"><figcaption>The same scene in PT, EN and ES: translation swaps only the sentences.</figcaption></figure>
     <figure><div class="card" style="border:none;border-radius:0"><h3>Where the idea came from</h3><p>The method (read the site's design, write a script and animate scene by scene with checks) was inspired by the <a href="https://github.com/noeltg77/motive" target="_blank" rel="noopener">Motive</a> project. Since it has no license, filmarca was written from scratch, with different choices:</p>
@@ -276,7 +276,7 @@
   <h2>What exists and what's next</h2>
   <p class="sub">Version 0.1 is the complete command line. The next steps are open.</p>
   <div class="phase"><div class="tag">v0.1 ✓</div><div class="d"><strong>Complete assembly line</strong><span>Site DNA, script, validated scenes with repair and fallback, editing with versions, PT/EN/ES translation, 16:9, 9:16 and 1:1 render, optional soundtrack, review page and automated tests.</span></div></div>
-  <div class="phase"><div class="tag">next</div><div class="d"><strong>Narration</strong><span>Per-scene voice with local TTS (inemavox or <code>hyperframes tts</code>), with scene duration following the speech.</span></div></div>
+  <div class="phase"><div class="tag">next</div><div class="d"><strong>Narration</strong><span>Per-scene voice with local TTS (ARCKHÉvox or <code>hyperframes tts</code>), with scene duration following the speech.</span></div></div>
   <div class="phase"><div class="tag">next</div><div class="d"><strong>More sources</strong><span>Read a GitHub repository or an HTML brand book, besides the website.</span></div></div>
   <div class="phase"><div class="tag">idea</div><div class="d"><strong>Browser studio</strong><span>Preview with a timeline, click-to-edit scenes and version history.</span></div></div>
 </div></section>
@@ -285,8 +285,8 @@
   <div class="wrap">
     <div class="pill">Node.js</div><div class="pill">Playwright</div><div class="pill">HyperFrames + GSAP</div><div class="pill">Claude Code / Codex</div>
     <p style="margin-top:18px">filmarca · open source (MIT) ·
-      <a href="https://github.com/inematds/filmarca">inematds/filmarca</a> ·
-      <a href="https://inema.club">INEMA.CLUB</a></p>
+      <a href="https://github.com/linnoff88-dev/filmarca">linnoff88-dev/filmarca</a> ·
+      <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
   </div>
 </footer>
 

@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>filmarca — do site ao filme da marca</title>
 <meta name="description" content="filmarca lê o DNA visual de um site e gera um filme de produto em 16:9, 9:16 e 1:1, em PT, EN e ES, com a IA da sua assinatura (Claude Code ou Codex), sem chave de API.">
-<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/filmarca/guia/">
-<link rel="alternate" hreflang="en" href="https://inematds.github.io/filmarca/guia/en/">
-<link rel="alternate" hreflang="es" href="https://inematds.github.io/filmarca/guia/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://linnoff88-dev.github.io/
+<link rel="alternate" hreflang="en" href="https://linnoff88-dev.github.io/
+<link rel="alternate" hreflang="es" href="https://linnoff88-dev.github.io/
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -39,8 +39,8 @@
   nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
   nav .brand .emoji{font-size:1.25rem}
   nav .sep{color:var(--mut);opacity:.45}
-  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
-  nav .inema:hover{filter:brightness(1.15)}
+  nav .ARCKHÉ{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .ARCKHÉ:hover{filter:brightness(1.15)}
   nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
   nav .pro:hover{filter:brightness(1.15)}
   nav .clubpro{display:inline-flex;align-items:center;gap:6px}
@@ -113,9 +113,9 @@
   <a class="brand" href="#top"><span class="emoji">🎬</span> filmarca</a>
   <span class="sep">|</span>
   <span class="clubpro">
-    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <a class="ARCKHÉ" href="https://ARCKHÉ AI" target="_blank" rel="noopener">ARCKHÉ AI</a>
     <span class="sep">-</span>
-    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+    <a class="pro" href="https://ARCKHÉ.pro" target="_blank" rel="noopener">PRO</a>
   </span>
   <div class="links">
     <a class="sec" href="#oque">O que é</a>
@@ -125,7 +125,7 @@
     <a class="sec" href="#roadmap">Roadmap</a>
     <span class="lang"><a class="on" href="./">PT</a><a href="en/">EN</a><a href="es/">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
-    <a class="btn" href="https://github.com/inematds/filmarca" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://github.com/linnoff88-dev/filmarca" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
 
@@ -138,7 +138,7 @@
       <p class="lead">Aponte um endereço. O filmarca lê cores, fontes, logo, textos e prints do site, escreve o roteiro, anima as cenas e entrega o MP4 em 16:9, 9:16 e 1:1, em português, inglês e espanhol.</p>
       <div class="cta">
         <a class="btn" href="#guia">Começar o guia</a>
-        <a class="btn ghost" href="https://github.com/inematds/filmarca" target="_blank" rel="noopener">Ver no GitHub</a>
+        <a class="btn ghost" href="https://github.com/linnoff88-dev/filmarca" target="_blank" rel="noopener">Ver no GitHub</a>
       </div>
     </div>
     <figure><img src="assets/banner.jpg" alt="Banner: site vira filme"></figure>
@@ -191,7 +191,7 @@
     <div class="card"><h3>Claude Code ou Codex logado</h3><p>A IA roda pela sua assinatura. Basta um dos dois funcionando no terminal.</p><pre><span class="k">claude</span> -p <span class="s">"diga ok"</span>
 <span class="c"># ou</span>
 <span class="k">codex</span> exec <span class="s">"diga ok"</span></pre></div>
-    <div class="card"><h3>O filmarca</h3><p>Clone, instale e baixe o navegador uma vez.</p><pre><span class="k">git</span> clone https://github.com/inematds/filmarca
+    <div class="card"><h3>O filmarca</h3><p>Clone, instale e baixe o navegador uma vez.</p><pre><span class="k">git</span> clone https://github.com/linnoff88-dev/filmarca
 <span class="k">cd</span> filmarca && <span class="k">npm</span> i
 <span class="k">npx</span> playwright install chromium</pre></div>
   </div>
@@ -244,21 +244,21 @@
 
   <div class="step"><div class="b">7</div><div>
     <h3>Escolha o modelo</h3>
-    <p>Por padrão o diretor e as cenas usam o modelo "topo" e a tradução o "menor", lidos de <code>~/.config/inema/modelos.env</code> quando existe. Para forçar um modelo em tudo:</p>
+    <p>Por padrão o diretor e as cenas usam o modelo "topo" e a tradução o "menor", lidos de <code>~/.config/ARCKHÉ/modelos.env</code> quando existe. Para forçar um modelo em tudo:</p>
 <pre><span class="k">FILMARCA_MODELO</span>=sonnet <span class="k">node</span> bin/filmarca.mjs cenas ~/filmes/seusite --so c2,c5</pre>
   </div></div>
 </div></section>
 
 <section id="exemplos"><div class="wrap">
   <span class="chip">Exemplos</span>
-  <h2>O filme do inema.club, feito pela própria ferramenta</h2>
-  <p class="sub">Nada aqui foi animado à mão: o filmarca leu o inema.club, a IA escreveu as 8 cenas e todas passaram na conferência. Tempo total do rascunho: 2,7 minutos.</p>
+  <h2>O filme do ARCKHÉ AI, feito pela própria ferramenta</h2>
+  <p class="sub">Nada aqui foi animado à mão: o filmarca leu o ARCKHÉ AI, a IA escreveu as 8 cenas e todas passaram na conferência. Tempo total do rascunho: 2,7 minutos.</p>
   <div class="vid">
     <video src="../docs/demo-pt-16x9.mp4" poster="../docs/demo-poster.jpg" controls muted playsinline preload="none"></video>
     <video src="../docs/demo-pt-9x16.mp4" controls muted playsinline preload="none"></video>
   </div>
   <div class="ex">
-    <figure><img src="assets/ex-cenas.jpg" alt="Nove quadros do filme do inema.club" loading="lazy"><figcaption>Quadros do filme em 16:9: abertura, título, palavras se trocando, lista em cartões, print real do site, linha de passos e chamada final.</figcaption></figure>
+    <figure><img src="assets/ex-cenas.jpg" alt="Nove quadros do filme do ARCKHÉ AI" loading="lazy"><figcaption>Quadros do filme em 16:9: abertura, título, palavras se trocando, lista em cartões, print real do site, linha de passos e chamada final.</figcaption></figure>
     <figure><img src="assets/ex-formatos.jpg" alt="A mesma cena em 16:9, 9:16 e 1:1" loading="lazy"><figcaption>A mesma cena nos três formatos. O código é um só: as medidas são relativas ao quadro.</figcaption></figure>
     <figure><img src="assets/ex-idiomas.jpg" alt="A mesma cena em português, inglês e espanhol" loading="lazy"><figcaption>A mesma cena em PT, EN e ES: a tradução troca só as frases.</figcaption></figure>
     <figure><div class="card" style="border:none;border-radius:0"><h3>De onde veio a ideia</h3><p>O método (ler o design do site, escrever um roteiro e animar cena a cena com conferência) foi inspirado no projeto <a href="https://github.com/noeltg77/motive" target="_blank" rel="noopener">Motive</a>. Como ele não tem licença, o filmarca foi escrito do zero, com outras escolhas:</p>
@@ -276,7 +276,7 @@
   <h2>O que já existe e o que vem</h2>
   <p class="sub">A versão 0.1 é a linha de comando completa. As próximas etapas estão em aberto.</p>
   <div class="phase"><div class="tag">v0.1 ✓</div><div class="d"><strong>Linha de montagem completa</strong><span>DNA do site, roteiro, cenas validadas com reparo e reserva, edição com versões, tradução PT/EN/ES, render 16:9, 9:16 e 1:1, trilha opcional, página de revisão e testes automáticos.</span></div></div>
-  <div class="phase"><div class="tag">próximo</div><div class="d"><strong>Narração</strong><span>Voz por cena com TTS local (inemavox ou <code>hyperframes tts</code>), com a duração da cena acompanhando a fala.</span></div></div>
+  <div class="phase"><div class="tag">próximo</div><div class="d"><strong>Narração</strong><span>Voz por cena com TTS local (ARCKHÉvox ou <code>hyperframes tts</code>), com a duração da cena acompanhando a fala.</span></div></div>
   <div class="phase"><div class="tag">próximo</div><div class="d"><strong>Mais fontes</strong><span>Ler um repositório do GitHub ou um brand book em HTML, além do site.</span></div></div>
   <div class="phase"><div class="tag">ideia</div><div class="d"><strong>Estúdio no navegador</strong><span>Prévia com linha do tempo, edição de cena por clique e histórico de versões.</span></div></div>
 </div></section>
@@ -285,8 +285,8 @@
   <div class="wrap">
     <div class="pill">Node.js</div><div class="pill">Playwright</div><div class="pill">HyperFrames + GSAP</div><div class="pill">Claude Code / Codex</div>
     <p style="margin-top:18px">filmarca · código aberto (MIT) ·
-      <a href="https://github.com/inematds/filmarca">inematds/filmarca</a> ·
-      <a href="https://inema.club">INEMA.CLUB</a></p>
+      <a href="https://github.com/linnoff88-dev/filmarca">linnoff88-dev/filmarca</a> ·
+      <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
   </div>
 </footer>
 
