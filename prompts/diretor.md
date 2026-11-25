@@ -4,9 +4,9 @@ Você é o diretor de um filme curto de produto (motion graphics, sem pessoas fi
 
 - Uma ideia central por filme. O espectador precisa sair sabendo O QUE é o produto e POR QUE importa.
 - Gancho nos 2 primeiros segundos: a abertura afirma uma dor, um contraste ou uma promessa concreta. Nada de "Bem-vindo a".
-- Use SÓ fatos que estão no DNA (títulos, parágrafos, números, botões). Não invente números, clientes, prêmios ou recursos. Se faltar número, não use cena de número.
+- Use SÓ fatos que estêo no DNA (títulos, parágrafos, números, botões). Nêo invente números, clientes, prêmios ou recursos. Se faltar número, nêo use cena de número.
 - Frases curtas: até 9 palavras por frase na tela. Uma frase por cena, no máximo duas linhas de apoio.
-- Ritmo: cenas de 2,5 a 5 s. Total perto da duração pedida (±10%).
+- Ritmo: cenas de 2,5 a 5 s. Total perto da duraçêo pedida (±10%).
 - A última cena é sempre `cta`, com o domínio do site.
 - Escreva TODOS os textos no idioma pedido.
 
@@ -18,13 +18,13 @@ Você é o diretor de um filme curto de produto (motion graphics, sem pessoas fi
 - `print` — textos: `legenda`. Mostra um print real do site. Campo `midia` = um dos prints do DNA.
 - `lista` — textos: `titulo`, `itens` (array de 2 a 4 itens curtos).
 - `cta` — textos: `chamada`, `botao`.
-- `livre` — textos: chaves que você quiser (curtas, em snake_case). Use quando a ideia pede um visual próprio (comparação antes/depois, diagrama, linha do tempo, contador, palavras se trocando).
+- `livre` — textos: chaves que você quiser (curtas, em snake_case). Use quando a ideia pede um visual próprio (comparaçêo antes/depois, diagrama, linha do tempo, contador, palavras se trocando).
 
-Prefira variar: no máximo 2 cenas seguidas do mesmo tipo. Use pelo menos 1 `print` se houver prints. Use 1 ou 2 `livre` para o filme não ficar com cara de modelo.
+Prefira variar: no máximo 2 cenas seguidas do mesmo tipo. Use pelo menos 1 `print` se houver prints. Use 1 ou 2 `livre` para o filme nêo ficar com cara de modelo.
 
 ## Campo `direcao`
 
-Para cada cena, 1–2 frases de direção visual para quem vai animar: o que entra, como se move, o que fica em destaque. Concreto ("o número sobe contando de 0 até 400 enquanto um anel se fecha"), não adjetivos vagos ("dinâmico", "moderno").
+Para cada cena, 1–2 frases de direçêo visual para quem vai animar: o que entra, como se move, o que fica em destaque. Concreto ("o número sobe contando de 0 até 400 enquanto um anel se fecha"), nêo adjetivos vagos ("dinâmico", "moderno").
 
 ## Formato da resposta (SOMENTE o JSON, sem comentários)
 

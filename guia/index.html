@@ -147,44 +147,44 @@
 
 <section id="resumo" class="resumo"><div class="wrap">
   <span class="chip">Em resumo</span>
-  <p>O filmarca é uma ferramenta gratuita que transforma o site de uma empresa ou produto num vídeo curto de apresentação da marca. Você informa o endereço; ele copia as cores, as fontes, o logo e os textos do site, e a inteligência artificial escreve o roteiro e monta as cenas animadas. Serve para quem precisa de um vídeo para redes sociais ou para o próprio site e não tem editor de vídeo. Roda no seu computador e precisa do Node.js e de uma assinatura do Claude Code ou do Codex, sem pagar API.</p>
+  <p>O filmarca é uma ferramenta gratuita que transforma o site de uma empresa ou produto num vídeo curto de apresentaçêo da marca. Você informa o endereço; ele copia as cores, as fontes, o logo e os textos do site, e a inteligência artificial escreve o roteiro e monta as cenas animadas. Serve para quem precisa de um vídeo para redes sociais ou para o próprio site e nêo tem editor de vídeo. Roda no seu computador e precisa do Node.js e de uma assinatura do Claude Code ou do Codex, sem pagar API.</p>
 </div></section>
 
 <section id="oque"><div class="wrap">
   <span class="chip">O que é</span>
   <h2>Um diretor de filme de produto que roda no seu computador</h2>
-  <p class="sub">Uma ferramenta de linha de comando que transforma um site em vídeo de apresentação da marca. A IA escreve o roteiro e o código de cada cena; o filmarca confere cada cena antes de aceitar e renderiza tudo localmente com o HyperFrames.</p>
-  <figure style="margin:0 0 26px;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img src="assets/banner-grade.jpg" alt="Lê o site, roteiro com IA, cenas animadas, validação, 3 formatos, PT EN ES" loading="lazy" style="width:100%;display:block"></figure>
+  <p class="sub">Uma ferramenta de linha de comando que transforma um site em vídeo de apresentaçêo da marca. A IA escreve o roteiro e o código de cada cena; o filmarca confere cada cena antes de aceitar e renderiza tudo localmente com o HyperFrames.</p>
+  <figure style="margin:0 0 26px;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img src="assets/banner-grade.jpg" alt="Lê o site, roteiro com IA, cenas animadas, validaçêo, 3 formatos, PT EN ES" loading="lazy" style="width:100%;display:block"></figure>
   <div class="grid g3">
     <div class="card"><h3>🔑 Sem chave de API</h3><p>Usa a IA da sua assinatura: o Claude Code (<code>claude -p</code>) ou o Codex (<code>codex exec</code>) já logados na máquina. Nenhuma chave é lida nem enviada.</p></div>
     <div class="card"><h3>🛡️ Cena só entra se passar</h3><p>Cada cena da IA é conferida no navegador nos três formatos: sem rede, sem relógio, sem texto fora do quadro, sem palavra partida. Se falhar, a IA corrige uma vez; se falhar de novo, entra uma cena-modelo.</p></div>
-    <div class="card"><h3>🌎 Três formatos, três idiomas</h3><p>O mesmo código de cena serve em 16:9, 9:16 e 1:1 (medidas relativas ao quadro). Os textos ficam fora do código, então traduzir para EN/ES troca só as frases.</p></div>
+    <div class="card"><h3>🌎 Três formatos, três idiomas</h3><p>O mesmo código de cena serve em 16:9, 9:16 e 1:1 (medidas relativas ao quadro). Os textos ficam fora do código, entêo traduzir para EN/ES troca só as frases.</p></div>
   </div>
 </div></section>
 
 <section id="fluxo"><div class="wrap">
   <span class="chip">Como funciona</span>
   <h2>Do endereço ao MP4 em cinco etapas</h2>
-  <p class="sub">Cada etapa grava arquivos na pasta do filme (<code>marca.json</code>, <code>roteiro.json</code>, <code>cenas/</code>, <code>renders/</code>), então dá para refazer só uma delas.</p>
+  <p class="sub">Cada etapa grava arquivos na pasta do filme (<code>marca.json</code>, <code>roteiro.json</code>, <code>cenas/</code>, <code>renders/</code>), entêo dá para refazer só uma delas.</p>
   <div class="flow">
     <span>DNA do site</span><span class="arr">→</span>
     <span>Roteiro (diretor)</span><span class="arr">→</span>
     <span>Cenas (IA, 3 por vez)</span><span class="arr">→</span>
-    <span>Validação + reparo</span><span class="arr">→</span>
-    <span>Tradução dos textos</span><span class="arr">→</span>
+    <span>Validaçêo + reparo</span><span class="arr">→</span>
+    <span>Traduçêo dos textos</span><span class="arr">→</span>
     <span>Render HyperFrames</span>
   </div>
   <div class="grid g3" style="margin-top:26px">
-    <div class="card"><div class="num">1</div><h3>DNA do site</h3><p>O Chromium do Playwright abre o site e mede: cor de fundo, de texto e dos botões, famílias de fonte (baixa os arquivos), logo, títulos, parágrafos, números, e tira prints do topo, de três faixas e da versão celular. Sem logo em imagem, gera um logotipo em texto.</p></div>
+    <div class="card"><div class="num">1</div><h3>DNA do site</h3><p>O Chromium do Playwright abre o site e mede: cor de fundo, de texto e dos botões, famílias de fonte (baixa os arquivos), logo, títulos, parágrafos, números, e tira prints do topo, de três faixas e da versêo celular. Sem logo em imagem, gera um logotipo em texto.</p></div>
     <div class="card"><div class="num">2</div><h3>Roteiro e cenas</h3><p>O diretor escreve o conceito e as cenas (abertura, título, número, print, lista, livre, chamada) só com fatos do site. Depois cada cena vira HTML + CSS + GSAP, escrita pela IA seguindo um contrato fechado.</p></div>
-    <div class="card"><div class="num">3</div><h3>Conferência e render</h3><p>Cada cena roda sozinha no navegador nos três formatos. Aprovadas, viram uma composição HyperFrames por idioma e formato, passam no <code>hyperframes lint</code> e saem em MP4.</p></div>
+    <div class="card"><div class="num">3</div><h3>Conferência e render</h3><p>Cada cena roda sozinha no navegador nos três formatos. Aprovadas, viram uma composiçêo HyperFrames por idioma e formato, passam no <code>hyperframes lint</code> e saem em MP4.</p></div>
   </div>
 </div></section>
 
 <section id="pre"><div class="wrap">
   <span class="chip">Pré-requisitos</span>
   <h2>O que precisa estar na máquina</h2>
-  <p class="sub">Linux, macOS ou Windows (WSL). A primeira execução baixa o Chromium do Playwright.</p>
+  <p class="sub">Linux, macOS ou Windows (WSL). A primeira execuçêo baixa o Chromium do Playwright.</p>
   <div class="grid g3">
     <div class="card"><h3>Node.js 22+ e FFmpeg</h3><p>O HyperFrames exige Node 22 ou mais novo e o FFmpeg no PATH.</p><pre><span class="k">node</span> -v   <span class="c"># v22 ou mais</span>
 <span class="k">ffmpeg</span> -version</pre></div>
@@ -199,7 +199,7 @@
 
 <section id="guia"><div class="wrap">
   <span class="chip">Guia de uso · passo a passo</span>
-  <h2>Do primeiro filme à versão final</h2>
+  <h2>Do primeiro filme à versêo final</h2>
   <p class="sub">Todos os comandos rodam de dentro da pasta do filmarca. Sem <code>--out</code>, o filme vai para <code>~/projetos/output/filmarca/&lt;site&gt;-&lt;data&gt;</code>.</p>
 
   <div class="step"><div class="b">1</div><div>
@@ -217,20 +217,20 @@
 
   <div class="step"><div class="b">3</div><div>
     <h3>Revise as cenas</h3>
-    <p>Abra <code>revisao.html</code> na pasta do filme: cada cena aparece em 16:9 e 9:16, com os textos, a direção, a versão e se foi escrita pela IA ou é cena-modelo.</p>
+    <p>Abra <code>revisao.html</code> na pasta do filme: cada cena aparece em 16:9 e 9:16, com os textos, a direçêo, a versêo e se foi escrita pela IA ou é cena-modelo.</p>
 <pre><span class="k">xdg-open</span> ~/filmes/seusite/revisao.html   <span class="c"># no macOS: open</span></pre>
   </div></div>
 
   <div class="step"><div class="b">4</div><div>
-    <h3>Mude uma cena em texto (e desfaça se não gostar)</h3>
-    <p>A mudança passa pela mesma conferência. Cada versão fica guardada em <code>cenas/c3.vN.json</code>.</p>
+    <h3>Mude uma cena em texto (e desfaça se nêo gostar)</h3>
+    <p>A mudança passa pela mesma conferência. Cada versêo fica guardada em <code>cenas/c3.vN.json</code>.</p>
 <pre><span class="k">node</span> bin/filmarca.mjs editar ~/filmes/seusite c3 <span class="s">"o número entra contando e um anel se fecha em volta"</span>
-<span class="k">node</span> bin/filmarca.mjs voltar ~/filmes/seusite c3 1   <span class="c"># volta para a versão 1</span></pre>
+<span class="k">node</span> bin/filmarca.mjs voltar ~/filmes/seusite c3 1   <span class="c"># volta para a versêo 1</span></pre>
   </div></div>
 
   <div class="step"><div class="b">5</div><div>
     <h3>Traduza para inglês e espanhol</h3>
-    <p>Só os textos são traduzidos; o código das cenas é o mesmo. Na hora do render, cada cena é conferida de novo no idioma (frase maior não pode estourar o quadro).</p>
+    <p>Só os textos sêo traduzidos; o código das cenas é o mesmo. Na hora do render, cada cena é conferida de novo no idioma (frase maior nêo pode estourar o quadro).</p>
 <pre><span class="k">node</span> bin/filmarca.mjs traduzir ~/filmes/seusite --lang en
 <span class="k">node</span> bin/filmarca.mjs traduzir ~/filmes/seusite --lang es</pre>
   </div></div>
@@ -244,7 +244,7 @@
 
   <div class="step"><div class="b">7</div><div>
     <h3>Escolha o modelo</h3>
-    <p>Por padrão o diretor e as cenas usam o modelo "topo" e a tradução o "menor", lidos de <code>~/.config/ARCKHÉ/modelos.env</code> quando existe. Para forçar um modelo em tudo:</p>
+    <p>Por padrêo o diretor e as cenas usam o modelo "topo" e a traduçêo o "menor", lidos de <code>~/.config/ARCKHÉ/modelos.env</code> quando existe. Para forçar um modelo em tudo:</p>
 <pre><span class="k">FILMARCA_MODELO</span>=sonnet <span class="k">node</span> bin/filmarca.mjs cenas ~/filmes/seusite --so c2,c5</pre>
   </div></div>
 </div></section>
@@ -252,33 +252,33 @@
 <section id="exemplos"><div class="wrap">
   <span class="chip">Exemplos</span>
   <h2>O filme do ARCKHÉ AI, feito pela própria ferramenta</h2>
-  <p class="sub">Nada aqui foi animado à mão: o filmarca leu o ARCKHÉ AI, a IA escreveu as 8 cenas e todas passaram na conferência. Tempo total do rascunho: 2,7 minutos.</p>
+  <p class="sub">Nada aqui foi animado à mêo: o filmarca leu o ARCKHÉ AI, a IA escreveu as 8 cenas e todas passaram na conferência. Tempo total do rascunho: 2,7 minutos.</p>
   <div class="vid">
     <video src="../docs/demo-pt-16x9.mp4" poster="../docs/demo-poster.jpg" controls muted playsinline preload="none"></video>
     <video src="../docs/demo-pt-9x16.mp4" controls muted playsinline preload="none"></video>
   </div>
   <div class="ex">
     <figure><img src="assets/ex-cenas.jpg" alt="Nove quadros do filme do ARCKHÉ AI" loading="lazy"><figcaption>Quadros do filme em 16:9: abertura, título, palavras se trocando, lista em cartões, print real do site, linha de passos e chamada final.</figcaption></figure>
-    <figure><img src="assets/ex-formatos.jpg" alt="A mesma cena em 16:9, 9:16 e 1:1" loading="lazy"><figcaption>A mesma cena nos três formatos. O código é um só: as medidas são relativas ao quadro.</figcaption></figure>
-    <figure><img src="assets/ex-idiomas.jpg" alt="A mesma cena em português, inglês e espanhol" loading="lazy"><figcaption>A mesma cena em PT, EN e ES: a tradução troca só as frases.</figcaption></figure>
-    <figure><div class="card" style="border:none;border-radius:0"><h3>De onde veio a ideia</h3><p>O método (ler o design do site, escrever um roteiro e animar cena a cena com conferência) foi inspirado no projeto <a href="https://github.com/noeltg77/motive" target="_blank" rel="noopener">Motive</a>. Como ele não tem licença, o filmarca foi escrito do zero, com outras escolhas:</p>
+    <figure><img src="assets/ex-formatos.jpg" alt="A mesma cena em 16:9, 9:16 e 1:1" loading="lazy"><figcaption>A mesma cena nos três formatos. O código é um só: as medidas sêo relativas ao quadro.</figcaption></figure>
+    <figure><img src="assets/ex-idiomas.jpg" alt="A mesma cena em português, inglês e espanhol" loading="lazy"><figcaption>A mesma cena em PT, EN e ES: a traduçêo troca só as frases.</figcaption></figure>
+    <figure><div class="card" style="border:none;border-radius:0"><h3>De onde veio a ideia</h3><p>O método (ler o design do site, escrever um roteiro e animar cena a cena com conferência) foi inspirado no projeto <a href="https://github.com/noeltg77/motive" target="_blank" rel="noopener">Motive</a>. Como ele nêo tem licença, o filmarca foi escrito do zero, com outras escolhas:</p>
       <div class="tblwrap"><table class="cmp"><tr><th></th><th>filmarca</th></tr>
       <tr><td>IA</td><td>assinatura (Claude Code ou Codex), sem chave</td></tr>
       <tr><td>Render</td><td>HyperFrames (HTML + GSAP), sem licença comercial</td></tr>
       <tr><td>Conferência</td><td>navegador nos 3 formatos + lint do HyperFrames</td></tr>
       <tr><td>Idiomas</td><td>PT, EN e ES do mesmo código de cena</td></tr>
-      <tr><td>Licença</td><td>MIT</td></tr></table></div></div><figcaption>O filmarca não copia código nem prompts do Motive.</figcaption></figure>
+      <tr><td>Licença</td><td>MIT</td></tr></table></div></div><figcaption>O filmarca nêo copia código nem prompts do Motive.</figcaption></figure>
   </div>
 </div></section>
 
 <section id="roadmap"><div class="wrap">
   <span class="chip">Roadmap</span>
   <h2>O que já existe e o que vem</h2>
-  <p class="sub">A versão 0.1 é a linha de comando completa. As próximas etapas estão em aberto.</p>
-  <div class="phase"><div class="tag">v0.1 ✓</div><div class="d"><strong>Linha de montagem completa</strong><span>DNA do site, roteiro, cenas validadas com reparo e reserva, edição com versões, tradução PT/EN/ES, render 16:9, 9:16 e 1:1, trilha opcional, página de revisão e testes automáticos.</span></div></div>
-  <div class="phase"><div class="tag">próximo</div><div class="d"><strong>Narração</strong><span>Voz por cena com TTS local (ARCKHÉvox ou <code>hyperframes tts</code>), com a duração da cena acompanhando a fala.</span></div></div>
+  <p class="sub">A versêo 0.1 é a linha de comando completa. As próximas etapas estêo em aberto.</p>
+  <div class="phase"><div class="tag">v0.1 ✓</div><div class="d"><strong>Linha de montagem completa</strong><span>DNA do site, roteiro, cenas validadas com reparo e reserva, ediçêo com versões, traduçêo PT/EN/ES, render 16:9, 9:16 e 1:1, trilha opcional, página de revisêo e testes automáticos.</span></div></div>
+  <div class="phase"><div class="tag">próximo</div><div class="d"><strong>Narraçêo</strong><span>Voz por cena com TTS local (ARCKHÉvox ou <code>hyperframes tts</code>), com a duraçêo da cena acompanhando a fala.</span></div></div>
   <div class="phase"><div class="tag">próximo</div><div class="d"><strong>Mais fontes</strong><span>Ler um repositório do GitHub ou um brand book em HTML, além do site.</span></div></div>
-  <div class="phase"><div class="tag">ideia</div><div class="d"><strong>Estúdio no navegador</strong><span>Prévia com linha do tempo, edição de cena por clique e histórico de versões.</span></div></div>
+  <div class="phase"><div class="tag">ideia</div><div class="d"><strong>Estúdio no navegador</strong><span>Prévia com linha do tempo, ediçêo de cena por clique e histórico de versões.</span></div></div>
 </div></section>
 
 <footer>
