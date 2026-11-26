@@ -22,7 +22,7 @@ const AJUDA = `filmarca — do site ao filme da marca (16:9, 9:16 e 1:1), com a 
   filmarca render pasta [--langs pt,en] [--formatos 16x9] [--rascunho] [--trilha arq]
 
 A IA roda pelo Claude Code (claude -p) ou pelo Codex (codex exec) já logados — sem chave de API.
-Modelos: ~/.config/inema/modelos.env (INEMA_CLAUDE_TOPO / _MENOR) ou FILMARCA_MODELO.`;
+Modelos: ~/.config/ARCKHÉ/modelos.env (ARCKHÉ_CLAUDE_TOPO / _MENOR) ou FILMARCA_MODELO.`;
 
 function opcoes(argv) {
   const pos = [], o = {};

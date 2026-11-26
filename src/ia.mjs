@@ -1,12 +1,12 @@
 // IA pela ASSINATURA: chama o Claude Code (`claude -p`) ou o Codex (`codex exec`) já logados na máquina.
-// Nenhuma chave de API é lida ou enviada. O modelo vem de ~/.config/inema/modelos.env quando existir.
+// Nenhuma chave de API é lida ou enviada. O modelo vem de ~/.config/ARCKHÉ/modelos.env quando existir.
 import { spawn } from 'node:child_process';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 
 function lerModelos() {
-  const f = path.join(os.homedir(), '.config/inema/modelos.env');
+  const f = path.join(os.homedir(), '.config/ARCKHÉ/modelos.env');
   const env = {};
   if (fs.existsSync(f)) for (const l of fs.readFileSync(f, 'utf8').split('\n')) { const m = l.match(/^([A-Z0-9_]+)=(.*)$/); if (m) env[m[1]] = m[2].trim(); }
   return env;
@@ -15,7 +15,7 @@ function lerModelos() {
 // nivel: 'topo' (diretor, cenas) ou 'menor' (leitura, tradução).
 export function escolherModelo(motor, nivel) {
   const env = { ...lerModelos(), ...process.env };
-  const chave = `INEMA_${motor === 'codex' ? 'CODEX' : 'CLAUDE'}_${nivel === 'menor' ? 'MENOR' : 'TOPO'}`;
+  const chave = `ARCKHÉ_${motor === 'codex' ? 'CODEX' : 'CLAUDE'}_${nivel === 'menor' ? 'MENOR' : 'TOPO'}`;
   if (process.env.FILMARCA_MODELO) return process.env.FILMARCA_MODELO;
   return env[chave] || (motor === 'codex' ? (nivel === 'menor' ? 'gpt-6-luna' : 'gpt-6-astra') : (nivel === 'menor' ? 'sonnet' : 'opus'));
 }

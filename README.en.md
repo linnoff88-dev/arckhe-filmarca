@@ -1,6 +1,6 @@
 # 🎬 filmarca
 
-[![filmarca: website becomes a film](guia/assets/banner-en.jpg)](https://inematds.github.io/filmarca/guia/en/)
+[![filmarca: website becomes a film](guia/assets/banner-en.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/en/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -12,11 +12,11 @@ filmarca is a free tool that turns a company or product website into a short bra
 
 ## 📖 User guide
 
-Full guide (landing page + step by step): **https://inematds.github.io/filmarca/guia/en/**
+Full guide (landing page + step by step): **https://linnoff88-dev.github.io/arckhe-/guia/en/**
 
 ## Demo
 
-The inema.club film, made by the tool itself (8 scenes written by the AI, all approved by the checks, 2.7 min end to end):
+The ARCKHÉ AI film, made by the tool itself (8 scenes written by the AI, all approved by the checks, 2.7 min end to end):
 
 [![demo](docs/demo.gif)](docs/demo-pt-16x9.mp4)
 
@@ -27,7 +27,7 @@ The inema.club film, made by the tool itself (8 scenes written by the AI, all ap
 Requires Node.js 22+, FFmpeg and Claude Code (`claude`) or Codex (`codex`) logged in on the terminal.
 
 ```bash
-git clone https://github.com/inematds/filmarca
+git clone https://github.com/linnoff88-dev/filmarca
 cd filmarca
 npm i
 npx playwright install chromium
@@ -75,4 +75,4 @@ MIT. The bundled fonts (Inter and Sora) are SIL Open Font License. Fonts downloa
 
 ---
 
-Made by [INEMA.CLUB](https://inema.club).
+Made by [ARCKHÉ AI](https://ARCKHÉ AI).
